@@ -1,6 +1,7 @@
 import {render} from "react-dom";
 import Chars from "./Component";
-
-let element = <h1>Hello</h1>;
+import ClassChar from "./ClassComp";
 
 render(<Chars/>, document.getElementById("root"))
+render(<ClassChar/>, document.getElementById("root2"))
+
