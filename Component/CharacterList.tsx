@@ -13,21 +13,21 @@ type Props = {
   characters: Character[];
 };
 
-const CharacterList: FC<Props> = ({ company, characters }) => {
+const CharacterList: FC<Props> = ({ company, characters }) => (
   <>
-  <Header as="h2">{company}</Header>
-  <Item.Group>
-  {characters.map((character) => (
-    <Item key={character.id}>
-      <Icon name="user circle" size="huge" />
-      <Item.Content>
-        <Item.Header>{character.name}</Item.Header>
-        <Item.Meta>{character.grade}</Item.Meta>
-      </Item.Content>
-    </Item>
-  ))}
-  </Item.Group>
+    <Header as="h2">{company}</Header>
+    <Item.Group>
+      {characters.map((character) => (
+        <Item key={character.id}>
+          <Icon name="user circle" size="huge" />
+          <Item.Content>
+            <Item.Header>{character.name}</Item.Header>
+            <Item.Meta>{character.grade}</Item.Meta>
+          </Item.Content>
+        </Item>
+      ))}
+    </Item.Group>
   </>
-};
+);
 
 export default CharacterList;

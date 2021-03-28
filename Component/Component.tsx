@@ -25,7 +25,7 @@ const Chars: FC = () => {
       <header>
         <h1>ARIA Character</h1>
       </header>
-      <CharacterList companey="ARIA" characters={characters}/>
+      <CharacterList company="ARIA" characters={characters}/>
     </div>
   )
 }
